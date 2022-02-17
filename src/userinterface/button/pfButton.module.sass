@@ -1,0 +1,92 @@
+@import "../../styles/styleAssets/variables.sass"
+
+/**/
+/*    border: 2px solid #089E9C*/
+/*    background: transparent*/
+/*
+/*    border-radius: 2px*/
+/*    font-size: 20px*/
+/*    color: #f9ffd7*/
+/*    font-weight: bold*/
+/**/
+
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col)
+    background: $bcolor
+    -webkit-mask: url($url)
+    mask: url($url)
+    -webkit-mask-size: $x1 $y1
+    mask-size: $x1 $y1
+    border: $bor
+    color: $col
+
+
+.button_container
+    position: relative
+    overflow: hidden
+    width: fit-content
+    font-weight: 300
+    transition: 0.5s
+    letter-spacing: 1px
+    border-radius: 2px
+
+.svg_class
+    position: absolute
+    color: white
+    text-align: center
+    font-size: 15px
+    overflow: hidden
+    top: 25%
+    left: 14%
+    width: fit-content
+
+
+.pfButton
+    width: fit-content
+    font-weight: 300
+    font-size: 18px
+    cursor: pointer
+    padding: 5px
+    @include button($appBlackThemeAquamarine, "https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png", 7100%, 100%, none, #fff)
+    -webkit-animation: ani2 0.7s steps(70) forwards
+    animation: ani2 0.7s steps(70) forwards
+    &:hover
+        -webkit-animation: ani 0.7s steps(70) forwards
+        animation: ani 0.7s steps(70) forwards
+
+
+
+/*.pfButton:hover */
+/*    background: #089E9C*/
+/*    color: white*/
+/*    transition-duration: 0.3s*/
+/**/
+
+.pfButton_active
+    background: #089E9C
+    color: white
+    opacity: 100%
+
+
+.pfButton_unchosen
+    opacity: 50%
+
+
+@keyframes ani
+    from
+        -webkit-mask-position: 0 0
+        mask-position: 0 0
+
+
+    to
+        -webkit-mask-position: 100% 0
+        mask-position: 100% 0
+
+
+@keyframes ani2
+    from
+        -webkit-mask-position: 100% 0
+        mask-position: 100% 0
+    to
+        -webkit-mask-position: 0 0
+        mask-position: 0 0
+

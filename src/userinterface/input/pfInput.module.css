@@ -1,0 +1,29 @@
+.pfInput {
+    background: #171616;
+    color: #f9ffd7;
+    border: none;
+    border-radius: 2px;
+    width: 350px;
+    height: 35px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #f9ffd7;
+    font-size: 20px;
+    opacity: 25%;
+}
+
+.pfInput:focus {
+    background: white;
+    color: black;
+    transition-duration: 0.2s;
+}
+
+@media screen and (max-width: 320px){
+    .pfInput{
+        width: 100%;
+    }
+}

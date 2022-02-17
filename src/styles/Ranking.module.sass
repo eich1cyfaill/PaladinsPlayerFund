@@ -1,0 +1,53 @@
+@import "./styleAssets/variables.sass"
+
+.ranking__exampleholder
+  display: grid
+  grid-template-columns: 10fr 50fr 10fr 10fr 10fr
+  color: $appBlackThemeWhite
+  text-transform: uppercase
+  margin-top: 20px
+
+.ranking__itemWrapper
+.ranking__item
+  color: $appBlackThemeWhite
+  display: grid
+  grid-template-columns: 10fr 50fr 10fr 10fr 10fr
+  margin-top: 15px
+  margin-bottom: 15px
+  padding: 20px
+  background: $appBlackThemeLightDark
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2)
+  border-left: 5px solid $appBlackThemeAquamarine
+
+
+.unknownPlayer
+  background: $appBlackThemeDark
+  display: flex
+  border-radius: 25px
+  padding: 2px
+  margin-right: 15px
+  cursor: pointer
+  position: relative
+  width: fit-content
+
+.unknownPlayerHint
+  width: fit-content
+  height: fit-content
+  border: 2px solid $appBlackThemeLightDark
+  position: absolute
+  background: $appBlackThemeDark
+  padding: 15px
+  border-radius: 2px
+  bottom: 0
+
+
+@media screen and (max-width: 425px)
+  .ranking__exampleholder
+    font-size: 11px
+    grid-template-columns: 20fr 30fr 20fr 10fr 10fr
+  .ranking__item
+    grid-template-columns: 20fr 30fr 20fr 10fr 10fr
+    font-size: 10px
+  .unknownPlayerHint
+    width: fit-content
+    height: fit-content

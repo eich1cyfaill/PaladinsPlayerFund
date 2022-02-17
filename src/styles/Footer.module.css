@@ -1,0 +1,42 @@
+.footer {
+    background: #171616;
+    position: fixed;
+    bottom: 0;
+    width: 1200px;
+    font-family: Leelawadee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 100vw;
+}
+
+.footerClosed {
+    color: #f9ffd7;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.footerOpened {
+    color: #f9ffd7;
+}
+.footerClosedShown {
+    visibility: visible;
+}
+.footerOpenedShown {
+    height: 3vh;
+    text-align: center;
+    visibility: visible;
+}
+
+.footerOpenedShown a{
+    color: #f9ffd7;
+    text-decoration: underline;
+}
+
+.closedFooterUnshown {
+    visibility: hidden;
+}
+.openedFooterUnshown {
+    visibility: hidden;
+    height: 0;
+}

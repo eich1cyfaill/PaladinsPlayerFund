@@ -1,0 +1,55 @@
+@import "./styleAssets/variables.sass"
+
+.matchDetail__matchShortInfo
+  margin-top: 2vh
+  height: 15vh
+  color: $appBlackThemeWhite
+  background-size: cover
+  background-position: center
+  &_wrapper
+    height: 15vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 10px
+  &_upperString
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &_bottomString
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &_score
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 35px
+
+.teamResultsWrapper
+  display: grid
+  grid-template-columns: 1fr 1fr
+  column-gap: 1em
+  margin-top: 30px
+
+
+.secondTeamWrapper
+  &__titleResult
+    text-align: end
+
+
+
+
+
+@media screen and (max-width: 768px)
+  .matchDetail__matchShortInfo
+    margin-top: 0
+
+
+@media screen and (max-width: 425px)
+  .teamResultsWrapper
+    display: flex
+    flex-direction: column
+  .matchDetail__matchShortInfo
+    &_score
+      font-size: 25px
