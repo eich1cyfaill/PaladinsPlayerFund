@@ -24,7 +24,7 @@ const Footer = () => {
             <div className={`${cl.footerClosed} ${visibility === false ? cl.footerClosedShown : cl.closedFooterUnshown}`}>Click to open</div>
             <div className={`${cl.footerOpened} ${visibility === true ? cl.footerOpenedShown : cl.openedFooterUnshown}`}>
             {/*            <NavLink to='dev'><PfButton>Dev</PfButton></NavLink>*/}
-                Code of this application uploaded at <a href="https://github.com/eich1cyfaill/react-ts-paladins-fund/tree/main" target="_blank">GitHub</a>. Star it if you like it!
+                Code of this application uploaded at <a href="https://github.com/eich1cyfaill/PaladinsPlayerFund" target="_blank">GitHub</a>. Star it if you like it!
             </div>
         </div>
     );
