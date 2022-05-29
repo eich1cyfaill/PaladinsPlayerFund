@@ -5,7 +5,7 @@ This application written by React, Redux, and Typescript. This repository upload
 You won't be able to use this app since absence of API access.
 
 ## Usage
-To use application, first of all go to [this site and request temporary access](https://cors-anywhere.herokuapp.com/corsdemo).
+To use application, first of all go to [this site and request temporary access](https://cors-anywhere.herokuapp.com/corsdemo). ENABLE CORS ACCESS BEFORE USAGE
 Then you can open app by [this link](https://paladins-fund-heroku.herokuapp.com/)
 
 ## Technolgies Stack
