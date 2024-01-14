@@ -12,11 +12,8 @@ const Footer = () => {
 
 
     const changeVisibility = () => {
-        if(visibility == true){
-            setVisibility(false)
-        } else {
-            setVisibility(true)
-        }
+        boolean v = !visibility
+        setVisibility(v);
     }
 
     return (
